@@ -77,3 +77,9 @@ def twoXArray(x,y):
 print twoXArray(5,3)
 
 # Question 8
+def wordSort(string):
+  stringArray = string.split(',')
+  stringArray.sort()
+  print stringArray
+
+wordSort('hello,how,are,you')
