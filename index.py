@@ -60,3 +60,20 @@ def retardMath(arr):
   print output
 
 retardMath([100,25])
+
+# Question 7
+def twoXArray(x,y):
+  multiList = []
+  row = []
+  for i in range(0, x + 1):
+    for j in range(0, y +1):
+      if len(row) == y + 1:
+        multiList.append(row)
+        row = []
+      else:
+        row.append(i * j)
+  return multiList
+
+print twoXArray(5,3)
+
+# Question 8
