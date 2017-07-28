@@ -120,3 +120,33 @@ print numberDivByFive('1,2,3,4,5,6,7,8,10,15')
 
 
 numberDivByFive('10,13,14,15')
+
+#Question 12
+for i in range (1000, 3001):
+  evenNumbers = []
+  if i % 2 == 0:
+    evenNumbers.append(i)
+
+#Question 13
+def letterNumCount(string):
+  result = {'DIGITS': 0, 'LETTERS': 0}
+  for i in string:
+    if i.isdigit():
+      result['DIGITS'] += 1
+    if i.isalpha():
+      result['LETTERS'] += 1
+  print result
+
+letterNumCount('asdf234jkhyiuy7869876ghguy   lkjhuio9999lkjlj')
+
+#Question 14
+def upperVsLower(string):
+  result= {"UPPER": 0, "LOWER": 0}
+  for i in string:
+    if i.isupper():
+      result["UPPER"] += 1
+    if i.islower():
+      result["LOWER"] += 1
+  return result
+
+print upperVsLower('ADKLJHLKJHjklhkjlhlkjHKLJHDDJ908097KIOUI')
